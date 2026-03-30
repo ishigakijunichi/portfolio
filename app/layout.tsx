@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import Header from "@/src/components/Header";
 import "./globals.css";
+
+const geist = localFont({
+  src: [
+    {
+      path: "./geist-latin.woff2",
+      style: "normal",
+    },
+    {
+      path: "./geist-latin-ext.woff2",
+      style: "normal",
+    },
+  ],
+  variable: "--font-geist",
+});
 
 export const metadata: Metadata = {
   title: "Junichi Ishigaki | Product Designer",
@@ -13,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="min-h-screen flex flex-col antialiased bg-white text-[#012B55]">
+    <html lang="en" className={`${geist.variable} ${geist.className}`}>
+      <body className="min-h-screen flex flex-col">
         <Header />
         {children}
       </body>
