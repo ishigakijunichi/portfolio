@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <main className="flex-1 w-full">
-        <div className="py-8 px-5 md:px-6 md:py-12">
-          <div className="max-w-[1094px] mx-auto flex flex-col gap-8 md:gap-10">
+        <div className="py-12 px-6 md:px-10 md:py-16">
+          <div className="max-w-[1094px] mx-auto flex flex-col gap-12 md:gap-16">
             {projects.map((project, index) => (
               <Link
                 key={project.slug}

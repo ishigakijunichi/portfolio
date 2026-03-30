@@ -37,30 +37,30 @@ export default function AboutPage() {
     <main className="flex flex-col flex-1 min-h-screen bg-white">
       <div className="flex-1 w-full">
         {/* Page Title */}
-        <div className="w-full py-12 px-5 md:px-6 border-b border-gray-200">
+        <div className="w-full py-16 md:py-20 px-6 md:px-10 border-b border-gray-200">
           <div className="max-w-[1094px] mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-light text-[#012B55]">
-              about
+            <h1 className="text-3xl md:text-4xl font-light tracking-tight text-[#012B55]">
+              About
             </h1>
           </div>
         </div>
 
         {/* Profile Section */}
-        <div className="w-full px-5 md:px-6 py-12">
+        <div className="w-full px-6 md:px-10 py-14 md:py-20">
           <div className="max-w-[1094px] mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
               {/* Profile Photo Placeholder */}
               <div className="flex justify-center md:justify-start">
-                <div className="w-[276px] h-[288px] bg-gray-200 rounded-lg flex-shrink-0"></div>
+                <div className="w-[276px] h-[288px] bg-gray-100 rounded-lg flex-shrink-0"></div>
               </div>
 
               {/* Profile Info */}
               <div className="md:col-span-2">
-                <h2 className="text-2xl md:text-3xl font-semibold text-[#012B55] mb-4">
+                <h2 className="text-lg md:text-xl font-medium tracking-wide text-[#012B55] mb-5">
                   JUNICHI ISHIGAKI
                 </h2>
 
-                <p className="text-sm md:text-base text-[#012B55] leading-relaxed mb-6">
+                <p className="text-sm md:text-base text-[#012B55]/80 leading-relaxed mb-10">
                   Product Designer based in Tokyo. After studying mechanical
                   engineering, he majored in Industrial Design and Service
                   Design at Chiba University Graduate School. He is currently
@@ -69,11 +69,11 @@ export default function AboutPage() {
                 </p>
 
                 {/* Exhibition */}
-                <div className="mb-8">
-                  <h3 className="text-lg font-semibold text-[#012B55] mb-3">
+                <div className="mb-10">
+                  <h3 className="text-sm font-medium tracking-wide uppercase text-[#012B55] mb-4">
                     Exhibition
                   </h3>
-                  <ul className="text-sm md:text-base text-[#012B55] space-y-2">
+                  <ul className="text-sm md:text-base text-[#012B55]/80 space-y-2.5">
                     <li>
                       2022: DESIGNART TOKYO 2022, "Joint Exhibition: Ibasho
                       Portable Furniture"
@@ -97,11 +97,11 @@ export default function AboutPage() {
                 </div>
 
                 {/* Award */}
-                <div className="mb-8">
-                  <h3 className="text-lg font-semibold text-[#012B55] mb-3">
+                <div className="mb-10">
+                  <h3 className="text-sm font-medium tracking-wide uppercase text-[#012B55] mb-4">
                     Award
                   </h3>
-                  <ul className="text-sm md:text-base text-[#012B55] space-y-2">
+                  <ul className="text-sm md:text-base text-[#012B55]/80 space-y-2.5">
                     <li>2022: Bud Brand Award 2022, Honourable Mention</li>
                     <li>2020: Good Design Award 2020</li>
                     <li>2018: LINE BOOT AWARD 2018, Category award</li>
@@ -117,10 +117,10 @@ export default function AboutPage() {
 
                 {/* Education */}
                 <div>
-                  <h3 className="text-lg font-semibold text-[#012B55] mb-3">
+                  <h3 className="text-sm font-medium tracking-wide uppercase text-[#012B55] mb-4">
                     Education
                   </h3>
-                  <ul className="text-sm md:text-base text-[#012B55] space-y-2">
+                  <ul className="text-sm md:text-base text-[#012B55]/80 space-y-2.5">
                     <li>2016: Master of Engineering, Chiba University</li>
                     <li>2013-2014: Exchange, Köln International School of Design</li>
                     <li>2013: Exchange, Glasgow School of Art</li>
@@ -137,18 +137,18 @@ export default function AboutPage() {
         </div>
 
         {/* Contact Section */}
-        <div className="w-full px-5 md:px-6 py-12 border-t border-gray-200">
-          <div className="max-w-[1094px] mx-auto">
-            <h2 className="text-3xl md:text-4xl font-light text-[#012B55] mb-6">
+        <div className="w-full px-6 md:px-10 py-14 md:py-20 border-t border-gray-200">
+          <div className="max-w-[720px] mx-auto">
+            <h2 className="text-2xl md:text-3xl font-light tracking-tight text-[#012B55] mb-6">
               Get in Touch
             </h2>
 
-            <p className="text-sm md:text-base text-[#012B55] leading-relaxed mb-4">
+            <p className="text-sm md:text-base text-[#012B55]/80 leading-relaxed mb-3">
               Please feel free to contact me here with any inquiries about the
               project or my work. I will contact you shortly.
             </p>
 
-            <p className="text-sm md:text-base text-[#012B55] leading-relaxed mb-8">
+            <p className="text-sm md:text-base text-[#012B55]/80 leading-relaxed mb-10">
               お仕事のご相談や、作品についての質問などお気軽にお問合せください。
             </p>
 
@@ -162,7 +162,7 @@ export default function AboutPage() {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-[#012B55] mb-2"
+                  className="block text-xs font-medium tracking-wide uppercase text-[#012B55] mb-2"
                 >
                   Name
                 </label>
@@ -173,7 +173,7 @@ export default function AboutPage() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 md:px-6 py-2 border border-gray-300 rounded text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55]"
+                  className="w-full px-4 py-3 border border-gray-200 rounded text-sm text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55] transition-colors"
                   placeholder="Your name"
                 />
               </div>
@@ -181,7 +181,7 @@ export default function AboutPage() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-[#012B55] mb-2"
+                  className="block text-xs font-medium tracking-wide uppercase text-[#012B55] mb-2"
                 >
                   Email
                 </label>
@@ -192,7 +192,7 @@ export default function AboutPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 md:px-6 py-2 border border-gray-300 rounded text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55]"
+                  className="w-full px-4 py-3 border border-gray-200 rounded text-sm text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55] transition-colors"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -200,7 +200,7 @@ export default function AboutPage() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-[#012B55] mb-2"
+                  className="block text-xs font-medium tracking-wide uppercase text-[#012B55] mb-2"
                 >
                   Message
                 </label>
@@ -211,14 +211,14 @@ export default function AboutPage() {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-5 md:px-6 py-2 border border-gray-300 rounded text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55]"
+                  className="w-full px-4 py-3 border border-gray-200 rounded text-sm text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55] transition-colors"
                   placeholder="Your message..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="px-8 py-3 bg-[#012B55] text-white rounded hover:opacity-80 transition-opacity text-sm font-medium"
+                className="px-8 py-3 bg-[#012B55] text-white rounded hover:opacity-80 transition-opacity text-sm font-medium tracking-wide"
               >
                 Submit
               </button>
