@@ -37,7 +37,7 @@ export default function AboutPage() {
     <main className="flex flex-col flex-1 min-h-screen bg-white">
       <div className="flex-1 w-full">
         {/* Page Title */}
-        <div className="w-full py-12 px-4 border-b border-gray-200">
+        <div className="w-full py-12 px-5 md:px-6 border-b border-gray-200">
           <div className="max-w-[1094px] mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-light text-[#012B55]">
               about
@@ -46,7 +46,7 @@ export default function AboutPage() {
         </div>
 
         {/* Profile Section */}
-        <div className="w-full px-4 py-12">
+        <div className="w-full px-5 md:px-6 py-12">
           <div className="max-w-[1094px] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
               {/* Profile Photo Placeholder */}
@@ -137,7 +137,7 @@ export default function AboutPage() {
         </div>
 
         {/* Contact Section */}
-        <div className="w-full px-4 py-12 border-t border-gray-200">
+        <div className="w-full px-5 md:px-6 py-12 border-t border-gray-200">
           <div className="max-w-[1094px] mx-auto">
             <h2 className="text-3xl md:text-4xl font-light text-[#012B55] mb-6">
               Get in Touch
@@ -173,7 +173,7 @@ export default function AboutPage() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55]"
+                  className="w-full px-5 md:px-6 py-2 border border-gray-300 rounded text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55]"
                   placeholder="Your name"
                 />
               </div>
@@ -192,7 +192,7 @@ export default function AboutPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55]"
+                  className="w-full px-5 md:px-6 py-2 border border-gray-300 rounded text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55]"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -211,7 +211,7 @@ export default function AboutPage() {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-2 border border-gray-300 rounded text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55]"
+                  className="w-full px-5 md:px-6 py-2 border border-gray-300 rounded text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55]"
                   placeholder="Your message..."
                 ></textarea>
               </div>

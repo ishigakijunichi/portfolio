@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="w-full border-b border-gray-200 sticky top-0 bg-white z-40">
-      <div className="max-w-[1094px] mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="max-w-[1094px] mx-auto px-5 md:px-6 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-semibold text-[#012B55]">
           JUNICHI ISHIGAKI
         </Link>

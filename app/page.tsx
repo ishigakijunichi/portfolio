@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <main className="flex-1 w-full">
-        <div className="py-8 px-4 md:py-12">
+        <div className="py-8 px-5 md:px-6 md:py-12">
           <div className="max-w-[1094px] mx-auto flex flex-col gap-8 md:gap-10">
             {projects.map((project, index) => (
               <Link
@@ -16,7 +16,7 @@ export default function Home() {
                 href={`/projects/${project.slug}`}
                 className="block group"
               >
-                <div className="relative w-full h-[520px] md:h-[650px] overflow-hidden bg-gray-100 transition-opacity duration-300 group-hover:opacity-75">
+                <div className="relative w-full aspect-[3/4] md:aspect-[16/10] overflow-hidden bg-gray-100 transition-opacity duration-300 group-hover:opacity-75">
                   <Image
                     src={project.thumbnail}
                     alt={project.title}
