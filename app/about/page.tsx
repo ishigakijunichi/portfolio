@@ -25,8 +25,6 @@ export default function AboutPage() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Note: In a real implementation, this would send data to a backend
-    // For now, just show a success message
     console.log("Form submitted:", formData);
     setSubmitted(true);
     setFormData({ name: "", email: "", message: "" });
@@ -34,33 +32,33 @@ export default function AboutPage() {
   };
 
   return (
-    <main className="flex flex-col flex-1 min-h-screen bg-white">
+    <main className="flex flex-col flex-1 min-h-screen">
       <div className="flex-1 w-full">
         {/* Page Title */}
-        <div className="w-full py-16 md:py-20 px-6 md:px-10 border-b border-gray-200">
-          <div className="max-w-[1094px] mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl font-light tracking-tight text-[#012B55]">
+        <div className="w-full py-20 md:py-28 px-8 md:px-12">
+          <div className="max-w-[960px] mx-auto text-center">
+            <h1 className="text-2xl md:text-3xl font-normal tracking-tight">
               About
             </h1>
           </div>
         </div>
 
         {/* Profile Section */}
-        <div className="w-full px-6 md:px-10 py-14 md:py-20">
-          <div className="max-w-[1094px] mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
+        <div className="w-full px-8 md:px-12 pb-20 md:pb-28">
+          <div className="max-w-[960px] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-20">
               {/* Profile Photo Placeholder */}
               <div className="flex justify-center md:justify-start">
-                <div className="w-[276px] h-[288px] bg-gray-100 rounded-lg flex-shrink-0"></div>
+                <div className="w-full max-w-[276px] aspect-[23/24] bg-gray-100 flex-shrink-0"></div>
               </div>
 
               {/* Profile Info */}
               <div className="md:col-span-2">
-                <h2 className="text-lg md:text-xl font-medium tracking-wide text-[#012B55] mb-5">
-                  JUNICHI ISHIGAKI
+                <h2 className="text-sm font-normal tracking-[0.08em] uppercase mb-6">
+                  Junichi Ishigaki
                 </h2>
 
-                <p className="text-sm md:text-base text-[#012B55]/80 leading-relaxed mb-10">
+                <p className="text-sm md:text-base text-gray-600 leading-[1.8] mb-14">
                   Product Designer based in Tokyo. After studying mechanical
                   engineering, he majored in Industrial Design and Service
                   Design at Chiba University Graduate School. He is currently
@@ -69,11 +67,11 @@ export default function AboutPage() {
                 </p>
 
                 {/* Exhibition */}
-                <div className="mb-10">
-                  <h3 className="text-sm font-medium tracking-wide uppercase text-[#012B55] mb-4">
+                <div className="mb-14">
+                  <h3 className="text-xs font-medium tracking-[0.1em] uppercase text-gray-400 mb-5">
                     Exhibition
                   </h3>
-                  <ul className="text-sm md:text-base text-[#012B55]/80 space-y-2.5">
+                  <ul className="text-sm text-gray-600 space-y-3 leading-relaxed">
                     <li>
                       2022: DESIGNART TOKYO 2022, "Joint Exhibition: Ibasho
                       Portable Furniture"
@@ -97,11 +95,11 @@ export default function AboutPage() {
                 </div>
 
                 {/* Award */}
-                <div className="mb-10">
-                  <h3 className="text-sm font-medium tracking-wide uppercase text-[#012B55] mb-4">
+                <div className="mb-14">
+                  <h3 className="text-xs font-medium tracking-[0.1em] uppercase text-gray-400 mb-5">
                     Award
                   </h3>
-                  <ul className="text-sm md:text-base text-[#012B55]/80 space-y-2.5">
+                  <ul className="text-sm text-gray-600 space-y-3 leading-relaxed">
                     <li>2022: Bud Brand Award 2022, Honourable Mention</li>
                     <li>2020: Good Design Award 2020</li>
                     <li>2018: LINE BOOT AWARD 2018, Category award</li>
@@ -117,10 +115,10 @@ export default function AboutPage() {
 
                 {/* Education */}
                 <div>
-                  <h3 className="text-sm font-medium tracking-wide uppercase text-[#012B55] mb-4">
+                  <h3 className="text-xs font-medium tracking-[0.1em] uppercase text-gray-400 mb-5">
                     Education
                   </h3>
-                  <ul className="text-sm md:text-base text-[#012B55]/80 space-y-2.5">
+                  <ul className="text-sm text-gray-600 space-y-3 leading-relaxed">
                     <li>2016: Master of Engineering, Chiba University</li>
                     <li>2013-2014: Exchange, Köln International School of Design</li>
                     <li>2013: Exchange, Glasgow School of Art</li>
@@ -137,32 +135,32 @@ export default function AboutPage() {
         </div>
 
         {/* Contact Section */}
-        <div className="w-full px-6 md:px-10 py-14 md:py-20 border-t border-gray-200">
-          <div className="max-w-[720px] mx-auto">
-            <h2 className="text-2xl md:text-3xl font-light tracking-tight text-[#012B55] mb-6">
+        <div className="w-full px-8 md:px-12 py-20 md:py-28 border-t border-gray-200">
+          <div className="max-w-[520px] mx-auto">
+            <h2 className="text-2xl md:text-3xl font-normal tracking-tight mb-4">
               Get in Touch
             </h2>
 
-            <p className="text-sm md:text-base text-[#012B55]/80 leading-relaxed mb-3">
+            <p className="text-sm text-gray-600 leading-relaxed mb-2">
               Please feel free to contact me here with any inquiries about the
               project or my work. I will contact you shortly.
             </p>
 
-            <p className="text-sm md:text-base text-[#012B55]/80 leading-relaxed mb-10">
+            <p className="text-sm text-gray-600 leading-relaxed mb-12">
               お仕事のご相談や、作品についての質問などお気軽にお問合せください。
             </p>
 
             {submitted && (
-              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded text-green-700 text-sm">
+              <div className="mb-8 p-4 bg-green-50 border border-green-200 rounded text-green-700 text-sm">
                 Thank you for your message! I will get back to you soon.
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-8">
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-xs font-medium tracking-wide uppercase text-[#012B55] mb-2"
+                  className="block text-xs font-medium tracking-[0.1em] uppercase text-gray-400 mb-3"
                 >
                   Name
                 </label>
@@ -173,7 +171,7 @@ export default function AboutPage() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-200 rounded text-sm text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55] transition-colors"
+                  className="w-full px-0 py-3 border-0 border-b border-gray-200 text-sm bg-transparent placeholder-gray-300 focus:outline-none focus:border-gray-900 transition-colors"
                   placeholder="Your name"
                 />
               </div>
@@ -181,7 +179,7 @@ export default function AboutPage() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-xs font-medium tracking-wide uppercase text-[#012B55] mb-2"
+                  className="block text-xs font-medium tracking-[0.1em] uppercase text-gray-400 mb-3"
                 >
                   Email
                 </label>
@@ -192,7 +190,7 @@ export default function AboutPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-200 rounded text-sm text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55] transition-colors"
+                  className="w-full px-0 py-3 border-0 border-b border-gray-200 text-sm bg-transparent placeholder-gray-300 focus:outline-none focus:border-gray-900 transition-colors"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -200,7 +198,7 @@ export default function AboutPage() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-xs font-medium tracking-wide uppercase text-[#012B55] mb-2"
+                  className="block text-xs font-medium tracking-[0.1em] uppercase text-gray-400 mb-3"
                 >
                   Message
                 </label>
@@ -210,15 +208,15 @@ export default function AboutPage() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={6}
-                  className="w-full px-4 py-3 border border-gray-200 rounded text-sm text-[#012B55] placeholder-gray-400 focus:outline-none focus:border-[#012B55] transition-colors"
+                  rows={5}
+                  className="w-full px-0 py-3 border-0 border-b border-gray-200 text-sm bg-transparent placeholder-gray-300 focus:outline-none focus:border-gray-900 transition-colors resize-none"
                   placeholder="Your message..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="px-8 py-3 bg-[#012B55] text-white rounded hover:opacity-80 transition-opacity text-sm font-medium tracking-wide"
+                className="mt-4 px-8 py-3 bg-gray-900 text-white text-sm tracking-wide hover:bg-gray-800 transition-colors"
               >
                 Submit
               </button>

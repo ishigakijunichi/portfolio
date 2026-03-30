@@ -14,6 +14,7 @@ const geist = localFont({
       style: "normal",
     },
   ],
+  variable: "--font-geist",
 });
 
 export const metadata: Metadata = {
@@ -27,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={geist.className}>
-      <body className="min-h-screen flex flex-col antialiased bg-white text-[#012B55]">
+    <html lang="en" className={`${geist.variable} ${geist.className}`}>
+      <body className="min-h-screen flex flex-col">
         <Header />
         {children}
       </body>
