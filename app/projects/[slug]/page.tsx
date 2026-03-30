@@ -25,7 +25,7 @@ export default async function ProjectPage(props: { params: Params }) {
     <main className="flex flex-col flex-1 min-h-screen bg-white">
       <div className="flex-1 w-full">
         {/* Project Title */}
-        <div className="w-full py-12 px-4 border-b border-gray-200">
+        <div className="w-full py-12 px-5 md:px-6 border-b border-gray-200">
           <div className="max-w-[1094px] mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-light text-[#012B55]">
               {project.title}
@@ -34,7 +34,7 @@ export default async function ProjectPage(props: { params: Params }) {
         </div>
 
         {/* Project Info */}
-        <div className="w-full py-8 px-4">
+        <div className="w-full py-8 px-5 md:px-6">
           <div className="max-w-[1094px] mx-auto">
             <div className="text-sm md:text-base text-[#012B55] whitespace-pre-line leading-relaxed">
               {project.info}
@@ -43,7 +43,7 @@ export default async function ProjectPage(props: { params: Params }) {
         </div>
 
         {/* Hero Image */}
-        <div className="w-full px-4 py-8">
+        <div className="w-full px-5 md:px-6 py-8">
           <div className="max-w-[1094px] mx-auto">
             <div className="relative w-full aspect-[16/9] overflow-hidden bg-gray-100">
               <Image
@@ -58,7 +58,7 @@ export default async function ProjectPage(props: { params: Params }) {
         </div>
 
         {/* Description */}
-        <div className="w-full px-4 py-8">
+        <div className="w-full px-5 md:px-6 py-8">
           <div className="max-w-[1094px] mx-auto">
             <p className="text-sm md:text-base text-[#012B55] leading-relaxed">
               {project.description}
@@ -68,7 +68,7 @@ export default async function ProjectPage(props: { params: Params }) {
 
         {/* Gallery */}
         {project.galleryImages && project.galleryImages.length > 0 && (
-          <div className="w-full px-4 py-8">
+          <div className="w-full px-5 md:px-6 py-8">
             <div className="max-w-[1094px] mx-auto">
               {project.layout === "grid-3" ? (
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -125,7 +125,7 @@ export default async function ProjectPage(props: { params: Params }) {
 
         {/* Catalogue Section for Array Polar */}
         {project.catalogueImage && (
-          <div className="w-full px-4 py-8">
+          <div className="w-full px-5 md:px-6 py-8">
             <div className="max-w-[1094px] mx-auto">
               <h2 className="text-2xl md:text-3xl font-light text-[#012B55] mb-6">
                 Catalogue
@@ -143,7 +143,7 @@ export default async function ProjectPage(props: { params: Params }) {
         )}
 
         {/* You may also like section */}
-        <div className="w-full px-4 py-8 border-t border-gray-200">
+        <div className="w-full px-5 md:px-6 py-8 border-t border-gray-200">
           <div className="max-w-[1094px] mx-auto">
             <h2 className="text-2xl md:text-3xl font-light text-[#012B55]">
               You may also like
